@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            font-family: "Jost", sans-serif;
+        }
+
+        
+    </style>
+    <div class="container my-5">
+        <div class="card shadow p-4">
+            <h1 class="text-center mb-4">Quiz App</h1>
+            <div id="scoreboard" class="mb-4 text-center">
+                <p>Correct Answers: <span id="correct-count" class="fw-bold">0</span></p>
+                <p>Incorrect Answers: <span id="incorrect-count" class="fw-bold">0</span></p>
+                <button id="reset-score" class="btn btn-danger w-100">Reset Score</button>
+            </div>
+            <form id="difficulty-form" class="mb-4">
+                <div class="mb-3">
+                    <label for="difficulty" class="form-label">Select Difficulty Level:</label>
+                    <select id="difficulty" name="difficulty" class="form-select">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Get Question</button>
+            </form>
+            <div id="question-container" class="hidden mb-4">
+                <p id="question" class="fw-bold"></p>
+                <form id="answer-form">
+                    <div id="answers" class="mb-3"></div>
+                    <button type="submit" class="btn btn-success w-100">Submit Answer</button>
+                </form>
+            </div>
+            <div id="result" class="hidden text-center text-success fw-bold"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

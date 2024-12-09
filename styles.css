@@ -1,0 +1,38 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3 !important; 
+}
+
+#scoreboard p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
